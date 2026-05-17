@@ -133,3 +133,11 @@ window.addEventListener('click', (e) => {
     modal.classList.remove('show');
   }
 });
+
+// Close modal if user clicks OK button
+const closeModalBtn = document.getElementById('closeModalBtn');
+if (closeModalBtn) {
+  closeModalBtn.addEventListener('click', () => {
+    modal.classList.remove('show');
+  });
+}

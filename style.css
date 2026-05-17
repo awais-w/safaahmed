@@ -637,3 +637,7 @@ textarea.form-control {
 .modal-content p {
   color: var(--color-text-secondary);
 }
+.required {
+  color: #e11d48;
+  margin-left: 2px;
+}
