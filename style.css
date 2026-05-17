@@ -597,32 +597,36 @@ ul {
   .hero {
     flex-direction: column;
     text-align: center;
-    padding-top: 8rem;
+    padding: 6rem 1.5rem 3rem;
   }
 
   .hero-content {
     padding-right: 0;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
   }
 
   .hero-title {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
   }
 
   .hero-subtitle {
-    margin: 0 auto 2.5rem;
+    margin: 0 auto 2rem;
   }
 
   .hero-actions {
     justify-content: center;
+    margin-bottom: 2.5rem;
   }
 
   .hero-stats {
     justify-content: center;
+    gap: 2rem;
+    padding-top: 1.5rem;
   }
 
   .about-grid {
     grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
 }
 
@@ -676,12 +680,28 @@ ul {
     display: flex;
   }
 
+  .hero {
+    padding: 5rem 1.25rem 2rem;
+  }
+
+  .hero-content {
+    margin-bottom: 2rem;
+  }
+
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
   }
 
   .hero-actions {
     flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
   }
 
   .btn-large {
@@ -690,12 +710,39 @@ ul {
 
   .hero-stats {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.25rem;
     align-items: center;
+    padding-top: 1.25rem;
   }
 
   .section {
-    padding: 4rem 1.5rem;
+    padding: 3.5rem 1.25rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .section-subtitle {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+
+  .services-grid {
+    gap: 1.25rem;
+  }
+
+  .service-card {
+    padding: 1.75rem;
+  }
+
+  .rates-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .glass-card {
+    padding: 1.5rem;
   }
 }
 
