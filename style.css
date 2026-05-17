@@ -284,6 +284,7 @@ ul {
   position: relative;
   z-index: 2;
   object-fit: cover;
+  object-position: top center;
   aspect-ratio: 4/5;
 }
 .decorative-blob {
