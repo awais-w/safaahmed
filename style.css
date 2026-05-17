@@ -214,10 +214,14 @@ ul {
 .nav-links a {
   font-weight: 500;
   color: var(--color-text-secondary);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  transition: var(--transition);
 }
 
 .nav-links a:hover {
   color: var(--color-primary);
+  background-color: rgba(4, 106, 84, 0.06);
 }
 
 .mobile-menu-btn {
