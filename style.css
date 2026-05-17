@@ -327,10 +327,6 @@ ul {
   box-shadow: var(--shadow-md);
   transition: var(--transition);
 }
-.glass-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-lg);
-}
 .glass-card h3 {
   font-size: 1.25rem;
   margin-bottom: 1rem;
