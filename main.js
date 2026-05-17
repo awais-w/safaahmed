@@ -70,3 +70,66 @@ const observer = new IntersectionObserver((entries, observer) => {
 document.querySelectorAll('.fade-up').forEach(element => {
   observer.observe(element);
 });
+
+// Contact form handling with Web3Forms
+const form = document.getElementById('contactForm');
+const modal = document.getElementById('successModal');
+
+if (form) {
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Change button text while sending
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalBtnText = submitBtn.textContent;
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
+
+    const formData = new FormData(form);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: json
+    })
+    .then(async (response) => {
+      let json = await response.json();
+      if (response.status == 200) {
+        // Success
+        form.reset();
+        
+        // Show modal
+        modal.classList.add('show');
+        
+        // Hide modal after 5 seconds
+        setTimeout(() => {
+          modal.classList.remove('show');
+        }, 5000);
+      } else {
+        console.log(response);
+        alert('Something went wrong. Please try again.');
+      }
+    })
+    .catch(error => {
+      console.log(error);
+      alert('Something went wrong. Please try again.');
+    })
+    .finally(() => {
+      // Restore button
+      submitBtn.textContent = originalBtnText;
+      submitBtn.disabled = false;
+    });
+  });
+}
+
+// Close modal if user clicks outside the content
+window.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.classList.remove('show');
+  }
+});
