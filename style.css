@@ -960,3 +960,85 @@ textarea.form-control {
   color: #e11d48;
   margin-left: 2px;
 }
+
+/* FAQ Section Styling */
+.faq-grid {
+  max-width: 800px;
+  margin: 3rem auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.faq-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  overflow: hidden;
+}
+
+.faq-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(4, 106, 84, 0.15);
+}
+
+.faq-card[open] {
+  background: white;
+  border-color: rgba(4, 106, 84, 0.2);
+  box-shadow: var(--shadow-md);
+}
+
+.faq-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  transition: var(--transition);
+}
+
+/* Hide default disclosure triangle */
+.faq-summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-summary::after {
+  content: '+';
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--color-primary);
+  transition: transform 0.3s ease;
+  line-height: 1;
+}
+
+.faq-card[open] .faq-summary::after {
+  content: '−';
+  transform: rotate(180deg);
+  color: var(--color-secondary);
+}
+
+.faq-content {
+  padding: 0 2rem 1.5rem;
+  color: var(--color-text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.faq-content p {
+  margin-bottom: 0.75rem;
+}
+
+.faq-content p:last-child {
+  margin-bottom: 0;
+}
