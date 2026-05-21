@@ -744,6 +744,115 @@ ul {
   .glass-card {
     padding: 1.5rem;
   }
+
+  .testimonials-grid {
+    gap: 1.25rem;
+  }
+
+  .testimonial-card {
+    padding: 1.75rem;
+  }
+}
+
+/* Testimonials Section */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.testimonial-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(4, 106, 84, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: var(--transition);
+}
+
+.testimonial-card::before {
+  content: '“';
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 5rem;
+  line-height: 1;
+  color: var(--color-primary);
+  opacity: 0.08;
+  font-family: var(--font-heading);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(4, 106, 84, 0.15);
+}
+
+.testimonial-stars {
+  color: var(--color-secondary);
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  gap: 0.25rem;
+}
+
+.testimonial-stars svg {
+  fill: var(--color-secondary);
+}
+
+.testimonial-text {
+  color: var(--color-text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  font-style: italic;
+  flex-grow: 1;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding-top: 1.5rem;
+}
+
+.testimonial-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
+}
+
+.testimonial-avatar-alt {
+  background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-light) 100%);
+}
+
+.testimonial-info h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 0.15rem;
+}
+
+.testimonial-info p {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
 }
 
 /* Contact Form */
