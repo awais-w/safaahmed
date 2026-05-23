@@ -224,6 +224,28 @@ ul {
   background-color: rgba(4, 106, 84, 0.06);
 }
 
+@media (max-width: 1024px) {
+  .navbar {
+    padding-inline: 1.25rem;
+  }
+
+  .navbar.scrolled {
+    padding-inline: 1.25rem;
+  }
+
+  .nav-links {
+    gap: 0.5rem;
+  }
+
+  .nav-links a {
+    padding-inline: 0.625rem;
+  }
+
+  .nav-cta {
+    padding-inline: 1rem;
+  }
+}
+
 .mobile-menu-btn {
   display: none;
   background: none;
