@@ -1,6 +1,6 @@
-# Safa Ahmed Tutoring Website
+# Safa Ahmed Tuition Website
 
-A premium, modern, and highly responsive landing page for Safa Ahmed's professional tutoring services in London. Built with HTML5, CSS3, Vanilla JavaScript, and Vite.
+A premium, modern, and highly responsive landing page for Safa Ahmed's professional tuition services in London. Built with HTML5, CSS3, Vanilla JavaScript, and Vite.
 
 ---
 
@@ -20,7 +20,7 @@ The following infrastructure services were successfully set up and configured fo
 ## 🚀 Features
 - **Responsive Navigation**: Includes a fluid, modern hamburger menu with custom slide-down and fade-in animations on mobile screens.
 - **Subtle Branding**: Custom-made monogram favicons (SVG) and logos tailored specifically for Safa's brand.
-- **Subtle Grid Background**: Features an elegant, minimal, education-themed dot grid with smooth organic color highlights.
+- **Subtle Grid Background**: Features an elegant, minimal, education-themed dot grid with smooth organic colour highlights.
 - **Dynamic Scroll Animations**: Elements fade up beautifully as the visitor scrolls through the content.
 - **Secure Asynchronous Enquiries**: Features robust form validation and AJAX-based background submission to Web3Forms with a gorgeous custom Success Modal (dismissible via click, button, or auto-timeout).
 - **SEO Optimized**: Pre-configured page titles, meta descriptions, and semantic HTML5 structuring.
